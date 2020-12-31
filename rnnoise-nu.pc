@@ -1,0 +1,14 @@
+# rnnoise installed pkg-config file
+
+prefix=/home/cl/下载/rnnoise-nu-master/release
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: rnnoise-nu
+Description: RNN-based noise suppression, improved
+Version: 1.0
+Conflicts:
+Libs: -L${libdir} -lrnnoise-nu
+Libs.private: 
+Cflags: -I${includedir}/
